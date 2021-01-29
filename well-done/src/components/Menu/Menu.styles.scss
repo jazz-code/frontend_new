@@ -1,12 +1,17 @@
 .header {
 	background-color: #537ff0a6;
-	height: 5rem;
+	height: 4.9rem;
+	border-bottom: 5px solid #082b84;
 }
 
 .hamburger-menu {
 	margin: 30px;
 	position: absolute;
 	z-index: 1;
+	&:hover {
+		cursor: pointer;
+		color: #1243c0;
+	}
 
 	span {
 		background-color: #082b84;
@@ -27,7 +32,7 @@
 	// background-color: #082B84;
 	background-color: #082b84;
 	overflow-x: hidden;
-	transition: 0.5s;
+	transition: 0.3s;
 
 	.closebtn {
 		position: relative;

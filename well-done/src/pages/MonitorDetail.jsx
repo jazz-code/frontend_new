@@ -5,6 +5,7 @@ import { Row, Col, Descriptions, Badge, Button, Icon, Typography } from 'antd'
 import 'antd/dist/antd.css'
 import './MonitorDetail.css'
 import AxiosWithAuth from '../components/AxiosWithAuth/axiosWithAuth'
+import { Link } from 'react-router-dom'
 
 const { Title } = Typography
 
@@ -78,9 +79,11 @@ const MonitorDetails = (props) => {
 			<Row gutter={[8, 32]}>
 				<Col span={2}></Col>
 				<Col span={1}>
-					<Button type='primary' shape='circle' href='/'>
-						<Icon type='left' />
-					</Button>
+					<Link to='/dashboard'>
+						<Button type='primary' shape='circle'>
+							<Icon type='left' />
+						</Button>
+					</Link>
 				</Col>
 				<Col span={1}></Col>
 				<Col span={8}>

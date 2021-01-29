@@ -8,7 +8,7 @@ import { FiLogOut } from 'react-icons/fi'
 import { Redirect, NavLink } from 'react-router-dom'
 
 const Menu = (props) => {
-	console.log('props in Menu', props)
+	// console.log('props in Menu', props)
 
 	const openNav = () => {
 		document.getElementById('myNav').style.width = '210px'
@@ -50,7 +50,7 @@ const Menu = (props) => {
 					<div className='overlay-content-map'>
 						<div class='eachNav'>
 							<IoIosHome size={25} />
-							<NavLink to='/'>Home</NavLink>
+							<NavLink to='/dashboard'>Home</NavLink>
 						</div>
 						<div className='eachNav'>
 							<IoMdCreate size={25} />

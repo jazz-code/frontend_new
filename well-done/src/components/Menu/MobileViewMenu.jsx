@@ -48,7 +48,7 @@ const MobileViewMenu = (props) => {
 				<div className='mobile-overlay-content'>
 					<div class='mobile-eachNav'>
 						<IoIosHome size={25} />
-						<Link to='/'>Home</Link>
+						<Link to='/dashboard'>Home</Link>
 					</div>
 					<div className='mobile-eachNav'>
 						<IoMdCreate size={25} />

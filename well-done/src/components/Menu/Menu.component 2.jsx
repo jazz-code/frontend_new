@@ -49,7 +49,7 @@ const Menu = (props) => {
 					<div className='overlay-content-map'>
 						<div class='eachNav'>
 							<IoIosHome size={25} />
-							<NavLink to='/'>Home</NavLink>
+							<NavLink to='/dashboard'>Home</NavLink>
 						</div>
 						<div className='eachNav'>
 							<IoMdCreate size={25} />
