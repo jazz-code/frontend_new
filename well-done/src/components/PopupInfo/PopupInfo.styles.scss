@@ -1,127 +1,130 @@
 .popupInfo {
-    display: flex;
-    margin: 5px;
-    align-items: flex-start;
-    width: 240px;
+	display: flex;
+	margin: 0.1rem;
+	align-items: flex-end;
+	width: 0rem;
 
-    .pump_id {
-        width: 150px;
+	.pump_id {
+		width: 0rem;
+		margin-left: 1rem;
 
-        .nonFunc-back-icon {
-            display: flex; 
-            justify-content: center;
-            align-items: center;
-            background-color: #FECDCD;
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-    
-            .nonFunc-front-icon {
-                color: #f44336;
-                font-size: 17px;
-            }
-        }
-    
-        .unknown-back-icon {
-            display: flex; 
-            justify-content: center;
-            align-items: center;
-            background-color: #ffe2b8;
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-    
-            .unknown-front-icon {
-                color: #FFAD34;
-                font-size: 17px;
-            }
-        }
-    
-    
-        .func-back-icon {
-            display: flex; 
-            justify-content: center;
-            align-items: center;
-            background-color: #B8FFB8;
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-    
-            .func-front-icon {
-                color: #01c000;
-                font-size: 17px;
-            }
-        }
-        
-        
-        
-        .pump_num {
-            font-size: 13px;
-        }
-    }
+		.nonFunc-back-icon {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			// background-color: #ffe2b8;
+			height: 3rem;
+			width: 3rem;
+			border-radius: 50%;
 
-    
+			background-color: #fecdcd;
 
-    .pump_info {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+			.nonFunc-front-icon {
+				color: #f44336;
+				font-size: 17px;
+			}
+		}
 
+		.unknown-back-icon {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #ffe2b8;
+			height: 3rem;
+			width: 3rem;
+			border-radius: 50%;
 
-        .spread {
-            display: flex;
-    
-            .spread-green {
-                background-color: #01c000;
-                border-radius: 5px;
-                height: 16px;
-                width: 6px;
-                // margin: 0.1px;
-                padding-right: 0.1px;
-            
-            }
-    
-            .spread-yellow {
-                background-color: #FFAD34;
-                border-radius: 5px;
-                height: 16px;
-                width: 6px;
-                // margin: 0.1px;
-                padding-right: 0.1px;
-            }
-    
-            .spread-red {
-                background-color: #f44336;
-                border-radius: 5px;
-                height: 16px;
-                width: 6px;
-                padding-right: 0.1px;
-            }
-        }
+			.unknown-front-icon {
+				color: #ffad34;
+				font-size: 17px;
+			}
+		}
 
-        h3 {
-            font-size: 18px;
-            margin: 10px 0px 0px 0px;
-           
-        }
+		.func-back-icon {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 3rem;
+			width: 3rem;
+			border-radius: 50%;
+			background-color: #b8ffb8;
 
-        .province_name {
-            font-size: 14px;
-            margin: 10px 0px 0px 0px;
-           
-        }
+			.func-front-icon {
+				color: #01c000;
+				font-size: 17px;
+			}
+		}
 
-        .link {
-            color: blue;
-            font-size: 12px;
-            text-decoration: underline;
-            text-decoration-color: blue;
-            margin: 10px 0px 0px 0px;
-        }
+		.pump_num {
+			font-size: 13px;
+			font-weight: 600;
+			letter-spacing: 0.1rem;
+			margin: 0.3rem;
+		}
+	}
 
+	.pump_info {
+		display: flex;
+		margin-left: 5rem;
+		flex-direction: column;
+		align-items: flex-end;
+		width: 13rem;
 
-    }
+		.spread {
+			display: flex;
+			.pump-history {
+				font-size: 12px;
+				top: 0;
+				left: 120px;
+				letter-spacing: 0.1rem;
+				position: absolute;
+				font-weight: 700;
+			}
 
-    
+			.spread-green {
+				background-color: #01c000;
+				border-radius: 5px;
+				height: 16px;
+				width: 6px;
+				// margin: 0.1px;
+				padding-right: 0.1px;
+			}
+
+			.spread-yellow {
+				background-color: #ffad34;
+				border-radius: 5px;
+				height: 16px;
+				width: 6px;
+				// margin: 0.1px;
+				padding-right: 0.1px;
+			}
+
+			.spread-red {
+				background-color: #f44336;
+				border-radius: 5px;
+				height: 16px;
+				width: 6px;
+				padding-right: 0.1px;
+			}
+		}
+
+		h3 {
+			font-size: 18px;
+			margin: 10px 0px 0px 0px;
+		}
+
+		.province_name {
+			font-size: 14px;
+			margin: 0.2rem;
+			margin-left: 1.4rem;
+		}
+
+		.link {
+			color: blue;
+			font-size: 12px;
+			text-decoration: underline;
+			text-decoration-color: blue;
+			margin: 10px 0px 0px 0px;
+		}
+	}
 }
-
