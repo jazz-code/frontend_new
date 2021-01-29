@@ -34,7 +34,7 @@ function App(props) {
 			<Switch>
 				<PrivateRoute
 					exact
-					path='/dashboard'
+					path='/'
 					searchFiltered={searchFiltered}
 					setSearchFiltered={setSearchFiltered}
 					selectedPump={selectedPump}

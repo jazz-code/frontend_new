@@ -23,12 +23,7 @@ const StaticMenu = (props) => {
 			<div className='overlay-content'>
 				<div className='each-nav'>
 					<IoIosHome size={25} style={{ margin: '7.5px 10px' }} />
-					<Link
-						exact
-						to='/dashboard'
-						activeClassName='activeNavButton'
-						className='link'
-					>
+					<Link exact to='/' activeClassName='activeNavButton' className='link'>
 						Home
 					</Link>
 				</div>
