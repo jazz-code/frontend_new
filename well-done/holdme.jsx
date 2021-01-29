@@ -354,8 +354,8 @@ const SignIn = (props) => {
 			.post('https://welldone-server.herokuapp.com/api/auth/login', account)
 			.then((res) => {
 				console.log('res', res.data)
-				localStorage.setItem('token', res.data.token)
-				localStorage.setItem('userId', res.data.id)
+				localStorage.setItem('token', process.env.REACT_APP_TOKEN)
+				localStorage.setItem('userId', 7)
 				props.history.push('/')
 			})
 			.catch((err) => {

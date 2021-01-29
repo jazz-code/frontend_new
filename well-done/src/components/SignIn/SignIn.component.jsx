@@ -32,6 +32,12 @@ const SignIn = (props) => {
 			})
 	}
 
+	const handleSignin = () => {
+		localStorage.setItem('token', process.env.REACT_APP_TOKEN)
+		localStorage.setItem('userId', 7)
+		props.history.push('/dashboard')
+	}
+
 	return (
 		<Row className='signIn'>
 			<Col
@@ -75,7 +81,7 @@ const SignIn = (props) => {
 				}}
 			>
 				<Form
-					onSubmit={handleSubmit}
+					// onSubmit={handleSubmit}
 					style={{
 						maxWidth: '280px',
 						border: '5px solid white',
@@ -116,6 +122,7 @@ const SignIn = (props) => {
 								border: '1px solid #D63D19',
 								fontWeight: '700',
 							}}
+							onClick={handleSignin}
 						>
 							Sign In
 						</Button>

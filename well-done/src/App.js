@@ -32,9 +32,10 @@ function App(props) {
 			</MetaTags>
 
 			<Switch>
+				<Route exact path='/' component={Landing} />
 				<PrivateRoute
 					exact
-					path='/'
+					path='/dashboard'
 					searchFiltered={searchFiltered}
 					setSearchFiltered={setSearchFiltered}
 					selectedPump={selectedPump}
