@@ -1,4 +1,0 @@
-[build]
-  command = "yarn build"
-  publish="well-done/build"
-  base = "well-done"
