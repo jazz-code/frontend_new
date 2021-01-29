@@ -20,6 +20,9 @@
 		display: block;
 		margin-bottom: 5px;
 	}
+	@media (max-width: 600px) {
+		z-index: 5;
+	}
 }
 
 .overlay {
@@ -33,6 +36,10 @@
 	background-color: #082b84;
 	overflow-x: hidden;
 	transition: 0.3s;
+
+	@media (max-width: 600px) {
+		height: 100%;
+	}
 
 	.closebtn {
 		position: relative;
