@@ -38,14 +38,18 @@ const Search = (props) => {
 			<input
 				// class="search"
 				type='text'
-				placeholder='Search village or sensor physical ID'
+				placeholder='Search village or sensor ID'
 				onChange={handleChange}
 			/>
-			<div className='filtered'>
-				{props.searchFiltered.map((place) => (
-					<h2>{place.village_name}</h2>
-				))}
-			</div>
+			{props.searchFiltered.length > 0 ? (
+				<div className='filtered'>
+					{props.searchFiltered.map((place) => (
+						<h2>{place.village_name}</h2>
+					))}
+				</div>
+			) : (
+				''
+			)}
 		</div>
 	)
 }

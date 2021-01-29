@@ -6,6 +6,8 @@ import Dashboard from './pages/Dashboard'
 import MonitorDetails from './pages/MonitorDetail'
 import Monitors from './pages/OverviewPage/MonitorsPage'
 
+import './app.scss'
+
 import Settings from './pages/Settings/Settings'
 import MetaTags from 'react-meta-tags'
 import PrivateRoute from './components/PrivateRoute.jsx'

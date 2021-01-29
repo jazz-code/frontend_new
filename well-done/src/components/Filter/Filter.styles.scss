@@ -1,4 +1,11 @@
+:root {
+	--select-border: #777;
+	--select-focus: rgb(64, 64, 160);
+	--select-arrow: var(--select-border);
+}
+
 .filter-expand {
+	cursor: pointer;
 	border-radius: 4px;
 	background-color: #082b84;
 	color: white;
@@ -8,7 +15,7 @@
 	width: 200px;
 	height: 34px;
 	z-index: 4;
-	top: 25px;
+	top: 1rem;
 	right: 50px;
 	position: absolute;
 	display: flex;
@@ -40,35 +47,66 @@
 	/* padding-left: 12px; */
 	/* padding-right: 12px; */
 	/* padding-bottom: 5px; */
-	background-color: rgb(228, 228, 228);
+	background-color: #e4e4e4;
 	width: 13rem;
 	position: absolute;
 	z-index: 4;
-	top: 59px;
-	right: 50px;
+	top: 3rem;
+	right: 2.9rem;
 	/* transition: all 1s ease-out; */
 	border: 2px solid #082b84;
 
 	h4 {
 		letter-spacing: 0.1rem;
-		padding: 0.1rem;
+		padding: 0.4rem 3.1rem;
+		font-size: 0.9rem;
 		/* text-align: center; */
 		font-weight: 600;
 	}
 
 	.select-village {
-		display: block;
-		font-size: 14px;
-		color: rgba(0, 0, 0, 0.87);
-		padding: 5px;
+		// box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+		// display: block;
+		// appearance: none;
+		// font-size: 14px;
+		// color: rgba(0, 0, 0, 0.87);
+		// padding: 5px;
+		// width: 100%;
+		// max-width: 100%;
+		// box-sizing: border-box;
+		// border: 2px solid #aaa;
+		// border-radius: 10px;
+		// background-color: rgb(212, 212, 212);
+		// outline: none;
 		width: 100%;
-		max-width: 100%;
-		box-sizing: border-box;
-		border: 2px solid #aaa;
-		border-radius: 10px;
-		background-color: #fff;
+		min-width: 15ch;
+		max-width: 30ch;
+		border: 1px solid #777;
+		border-radius: 0.25em;
+		padding: 0.25em 0.5em;
+		font-size: 1.25rem;
+		cursor: pointer;
+		line-height: 1.1;
+		background-color: rgba(236, 235, 235, 0.815);
+		background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+		display: grid;
+		grid-template-areas: 'select';
+		align-items: center;
+
+		.select::after {
+			content: '';
+			width: 0.8em;
+			height: 0.5em;
+			background-color: rgb(64, 64, 160);
+			clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+			justify-self: end;
+		}
 	}
 
+	select,
+	.select:after {
+		grid-area: select;
+	}
 	.pump-type {
 		display: flex;
 		align-items: center;
@@ -76,6 +114,9 @@
 	}
 
 	p {
-		margin-right: 20px;
+		margin-right: 0.9rem;
+		font-weight: 800;
+		font-size: 1rem;
+		padding-top: 0.2rem;
 	}
 }
